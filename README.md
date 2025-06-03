@@ -187,7 +187,7 @@ This example script removes tooltips from images and hides optional properties i
 🔥 This script is run in the web browser! 🔥
 
 You can use `document`, `window` and all the functionality of a web browser to control the contents and behavior of your Notion pages.
-Also, because this is a JS file, you can edit it in your code editor with syntax highlighting and intellisense!
+Also, because this is a JS file, you can edit it in your code editor with syntax highlighting and IntelliSense!
 
 To incorporate this script into a Notion page, NoteHost must transform the file's contents into a string. Consequently, the `build-page-script-js-string.sh` script is executed whenever you run `npm run deploy`.
 
