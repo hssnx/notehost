@@ -10,7 +10,7 @@ export async function handleAppJs(url: URL, siteConfig: NoteHostSiteConfigFull) 
   )
   const ret = new Response(body.replace(siteRegex, domain).replace(/notion.so/g, domain), response)
 
-  ret.headers.set('Content-Type', 'application/x-javascript')
+  ret.headers.set('Content-Type', 'application/javascript')
 
   return ret
 }

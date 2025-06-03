@@ -3,7 +3,7 @@ export async function handleJs(url: URL) {
   const body = await response.text()
   const ret = new Response(body, response)
 
-  ret.headers.set('Content-Type', 'application/x-javascript')
+  ret.headers.set('Content-Type', 'application/javascript')
 
   return ret
 }
