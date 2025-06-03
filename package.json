@@ -31,7 +31,8 @@
     "build": "npm run prebuild && tsup src/index.ts --format cjs,esm --dts-resolve --clean --sourcemap --out-dir dist && npm run build:cli",
     "build:cli": "tsup src/cli/index.ts --format esm --clean --out-dir dist/cli",
     "release": "npm run build && changeset publish",
-    "lint": "echo Fix lint!"
+    "lint": "echo Fix lint!",
+    "test": "vitest"
   },
   "dependencies": {
     "@inquirer/prompts": "^3.3.2",
@@ -54,6 +55,7 @@
     "tsc": "^2.0.4",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
+    "vitest": "^3.2.1",
     "wrangler": "^3.0.0"
   }
 }
