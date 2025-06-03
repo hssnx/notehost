@@ -19,7 +19,12 @@ export async function initRepo(domain) {
       : templates[0]
 
   console.log(`\n🎬 Ready to generate NoteHost worker in: ${sdkDir}`)
-  await confirm({ message: 'Continue?', default: true })
+  const confirmed = await confirm({ message: 'Continue?', default: true })
+
+  if (!confirmed) {
+    console.log('Aborted.')
+    process.exit(0)
+  }
 
   console.log('Generating...')
 
